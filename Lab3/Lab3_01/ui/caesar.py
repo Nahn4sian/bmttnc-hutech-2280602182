@@ -9,44 +9,45 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import os
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = "../platforms"
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(982, 707)
+        MainWindow.resize(498, 324)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(440, 60, 161, 51))
+        self.label.setGeometry(QtCore.QRect(190, 10, 121, 16))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(120, 170, 111, 31))
+        self.label_2.setGeometry(QtCore.QRect(40, 50, 51, 16))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(140, 300, 71, 31))
+        self.label_3.setGeometry(QtCore.QRect(40, 120, 35, 10))
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(150, 410, 91, 21))
+        self.label_4.setGeometry(QtCore.QRect(40, 160, 41, 16))
         self.label_4.setObjectName("label_4")
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit.setGeometry(QtCore.QRect(310, 140, 501, 71))
+        self.textEdit.setGeometry(QtCore.QRect(100, 50, 331, 51))
         self.textEdit.setObjectName("textEdit")
         self.textEdit_2 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit_2.setGeometry(QtCore.QRect(310, 270, 501, 51))
+        self.textEdit_2.setGeometry(QtCore.QRect(100, 120, 331, 21))
         self.textEdit_2.setObjectName("textEdit_2")
         self.textEdit_3 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit_3.setGeometry(QtCore.QRect(310, 380, 491, 81))
+        self.textEdit_3.setGeometry(QtCore.QRect(100, 160, 331, 64))
         self.textEdit_3.setObjectName("textEdit_3")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(170, 510, 161, 61))
+        self.pushButton.setGeometry(QtCore.QRect(160, 250, 56, 17))
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(650, 520, 151, 61))
+        self.pushButton_2.setGeometry(QtCore.QRect(320, 250, 56, 17))
         self.pushButton_2.setObjectName("pushButton_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 982, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 498, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -59,12 +60,12 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">Caesar Cipher</span></p></body></html>"))
-        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">PlainText</span></p></body></html>"))
-        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Key</span></p></body></html>"))
-        self.label_4.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600;\">Cipher Text</span></p></body></html>"))
-        self.pushButton.setText(_translate("MainWindow", "Decrypt"))
-        self.pushButton_2.setText(_translate("MainWindow", "Encrypt"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">CAESAR CIPHER</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "Plain Text:"))
+        self.label_3.setText(_translate("MainWindow", "Key:"))
+        self.label_4.setText(_translate("MainWindow", "CipherText:"))
+        self.pushButton.setText(_translate("MainWindow", "Encrypt"))
+        self.pushButton_2.setText(_translate("MainWindow", "Decrypt"))
 
 
 if __name__ == "__main__":
